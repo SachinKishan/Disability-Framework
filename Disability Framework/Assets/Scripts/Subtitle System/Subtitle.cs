@@ -13,7 +13,6 @@ public class Subtitle : ScriptableObject
     
     public Subtitle GetSubtitle()
     {
-        
         return this;
     }
     

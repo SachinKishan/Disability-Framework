@@ -12,6 +12,7 @@ public class SubtitleManager : MonoBehaviour
     [SerializeField] private GameObject subtitleObject;
     private TMP_Text subtitleText;
     [HideInInspector]public static SubtitleManager Main;
+    [SerializeField] private float secondsBeforeNextSubtitle;
 
     private void Awake()
     {
@@ -32,15 +33,24 @@ public class SubtitleManager : MonoBehaviour
 
     public void MakeSubtitle()
     { 
+        StartCoroutine(Wait());
         
-       GameObject a= Instantiate(subtitleObject, subtitleCreationPos);
-       a.GetComponent<SubtitleTextBehavior>().StartMoving(endPoint);
     }
 
     public void ChangeCurrentSubtitle(Subtitle s)
     {
         currentSubtitle = s;//
-        subtitleText.text = currentSubtitle.subtitleText+" "+currentSubtitle.sourceDirection;
+        
+        subtitleText.text = currentSubtitle.subtitleText+" "+ (currentSubtitle.sourceDirection == Direction.None? " ":currentSubtitle.sourceDirection.ToString());
 
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(secondsBeforeNextSubtitle);
+
+        GameObject a= Instantiate(subtitleObject, subtitleCreationPos);
+        a.GetComponent<SubtitleTextBehavior>().StartMoving(endPoint);
+        
     }
 }

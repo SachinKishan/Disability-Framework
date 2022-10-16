@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public enum Direction
 {
-    Right,Left,Up,Down
+    None,Right,Left,Up,Down
 }
 public class SubtitleObject : MonoBehaviour
 {
