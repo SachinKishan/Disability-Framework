@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17982e6cc84f12047890c05ab43bf82c, type: 3}
-  m_Name: Laser Sound
+  m_Name: Test Sound
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 4e5d291987a2c48499e5f3ed05b36735, type: 3}
-  volume: 15.59
-  subtitle: {fileID: 11400000, guid: 74161680029f923408ad35e14ebe0c80, type: 2}
+  clip: {fileID: 0}
+  volume: 0
+  subtitle: {fileID: 11400000, guid: 1bf777d646d677a40821b70e92badbc3, type: 2}

@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17982e6cc84f12047890c05ab43bf82c, type: 3}
-  m_Name: Laser Sound
+  m_Script: {fileID: 11500000, guid: a4f719b6ded768542bb158295a8d3c3f, type: 3}
+  m_Name: Ghost
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 4e5d291987a2c48499e5f3ed05b36735, type: 3}
-  volume: 15.59
-  subtitle: {fileID: 11400000, guid: 74161680029f923408ad35e14ebe0c80, type: 2}
+  subtitleName: Ghost Attack
+  subtitleText: growl
+  sourceDirection: 1
+  duration: 0.5
+  italics: 1

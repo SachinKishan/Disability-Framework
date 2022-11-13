@@ -10,7 +10,8 @@ public class Subtitle : ScriptableObject
 
     [TextArea] public string subtitleText;
     public Direction sourceDirection;
-    
+    public float duration;
+    public bool italics;
     public Subtitle GetSubtitle()
     {
         return this;

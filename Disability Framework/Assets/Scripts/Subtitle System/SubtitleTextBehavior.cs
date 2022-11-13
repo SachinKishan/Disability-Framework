@@ -19,7 +19,7 @@ public class SubtitleTextBehavior : MonoBehaviour
         var pos = r.localPosition;
         //sayDialog.localPosition = new Vector3(pos.x, 840, pos.z);
         pos = new Vector3(pos.x, pos.y, pos.z);
-        StartCoroutine(LerpPosition(pos, timeToMove));
+        //StartCoroutine(LerpPosition(pos, timeToMove));
    
     }
     

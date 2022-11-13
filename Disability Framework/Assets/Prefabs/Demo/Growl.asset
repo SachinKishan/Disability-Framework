@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17982e6cc84f12047890c05ab43bf82c, type: 3}
-  m_Name: Laser Sound
+  m_Name: Growl
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 4e5d291987a2c48499e5f3ed05b36735, type: 3}
-  volume: 15.59
-  subtitle: {fileID: 11400000, guid: 74161680029f923408ad35e14ebe0c80, type: 2}
+  clip: {fileID: 8300000, guid: 51f403cb5904ef346a8906f32c18030c, type: 3}
+  volume: 1
+  subtitle: {fileID: 11400000, guid: dc23860dec9c19c43b6be2b4a3f4371f, type: 2}
