@@ -28,14 +28,10 @@ public class SubtitleToolMenu: EditorWindow
     [SerializeField]    public Operation type=Operation.Allocate;
 
     [SerializeField] private List<Sound_ScriptableObject_Demo> sounds = new List<Sound_ScriptableObject_Demo>()
-    {
-        ScriptableObject.CreateInstance<Sound_ScriptableObject_Demo>(),
-    };
+    ;
 
     [SerializeField] private List<Subtitle> subtitles = new List<Subtitle>()
-    {
-        ScriptableObject.CreateInstance<Subtitle>(),
-    };
+    ;
 
     private void OnEnable()
     {
